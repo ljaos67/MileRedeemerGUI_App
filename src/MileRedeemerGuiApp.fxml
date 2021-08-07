@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="800.0" style="-fx-background-color: #666698;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MileRedeemerGuiAppController">
+   <children>
+      <Pane prefHeight="314.0" prefWidth="329.0" style="-fx-background-color: #659365;">
+         <children>
+            <Pane depthTest="DISABLE" layoutX="6.0" layoutY="7.0" prefHeight="302.0" prefWidth="310.0" style="-fx-background-color: #629665; -fx-border-color: #000000;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="120.0" layoutY="-8.0" style="-fx-background-color: #629665; -fx-font-weight: bold;" text="Destinations" wrapText="true" />
+                  <ListView fx:id="DestListView" layoutX="10.0" layoutY="9.0" prefHeight="185.0" prefWidth="291.0" />
+                  <GridPane layoutX="10.0" layoutY="196.0" maxWidth="1.7976931348623157E308" prefHeight="99.0" prefWidth="291.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="191.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="48.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="62.0" vgrow="ALWAYS" />
+                      <RowConstraints maxHeight="64.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Normal Miles" />
+                        <TextField fx:id="NmilesText" editable="false" focusTraversable="false" maxHeight="-Infinity" prefHeight="0.0" prefWidth="199.0" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label layoutX="10.0" layoutY="13.0" style="-fx-font-weight: bold;" text="Supersaver dates" GridPane.rowIndex="3" />
+                        <Label layoutX="10.0" layoutY="13.0" style="-fx-font-weight: bold;" text="Upgrade cost" GridPane.rowIndex="2" />
+                        <Label layoutX="10.0" layoutY="13.0" style="-fx-font-weight: bold;" text="Supersaver miles" GridPane.rowIndex="1" />
+                        <TextField fx:id="UcostText" editable="false" focusTraversable="false" layoutX="102.0" layoutY="9.0" maxHeight="-Infinity" prefHeight="0.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="SmilesText" editable="false" focusTraversable="false" layoutX="10.0" layoutY="9.0" maxHeight="-Infinity" prefHeight="0.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="SdatesText" editable="false" focusTraversable="false" layoutX="102.0" layoutY="62.0" maxHeight="-Infinity" prefHeight="0.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children></Pane>
+         </children>
+      </Pane>
+      <Pane depthTest="DISABLE" prefHeight="314.0" prefWidth="486.0" style="-fx-background-color: #646496;">
+         <children>
+            <Pane depthTest="DISABLE" layoutX="6.0" layoutY="6.0" prefHeight="302.0" prefWidth="468.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.layout.Pane?&gt;&lt;Pane depthTest=&quot;DISABLE&quot; layoutX=&quot;36.0&quot; layoutY=&quot;14.0&quot; prefHeight=&quot;349.0&quot; prefWidth=&quot;238.0&quot; style=&quot;-fx-background-color: #629665; -fx-border-color: #000000;&quot; xmlns=&quot;http://javafx.com/javafx/8.0.171&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; /&gt;; -fx-border-color: #000000;">
+               <children>
+                  <Label layoutX="194.0" layoutY="-8.0" style="-fx-background-color: #646496; -fx-font-weight: bold;" text="Redeem Miles" />
+                  <GridPane layoutX="12.0" layoutY="14.0" prefHeight="51.0" prefWidth="445.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="193.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="0.0" prefWidth="252.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Enter your miles" />
+                        <Label layoutX="10.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Select your month of departure" GridPane.rowIndex="1" />
+                        <Spinner fx:id="Mselect" editable="true" prefHeight="42.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="EmilesText" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="Rdmiles" layoutX="13.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="445.0" text="Redeem miles" />
+                  <ListView fx:id="AlgListView" layoutX="14.0" layoutY="92.0" prefHeight="174.0" prefWidth="445.0" />
+                  <GridPane layoutX="14.0" layoutY="266.0" prefHeight="30.0" prefWidth="445.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="128.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="317.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="133.0" style="-fx-font-weight: bold;" text="Your remaining miles" />
+                        <TextField fx:id="RmilesText" editable="false" focusTraversable="false" prefHeight="25.0" prefWidth="308.0" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>
